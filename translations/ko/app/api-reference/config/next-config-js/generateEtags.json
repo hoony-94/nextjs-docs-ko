@@ -1,0 +1,8 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "75ac9c34b745": "generateEtags",
+  "9e3271b5d58d": "Next.js는 기본적으로 모든 페이지에 대해 ETag를 생성합니다. 여기에서 ETag 생성을 비활성화하는 방법을 알아보세요.",
+  "d47da82ab9a6": "Next.js는 기본적으로 모든 페이지에 대해 ETag를 생성합니다.",
+  "a6370b1f153d": "캐시 전략에 따라 HTML 페이지의 ETag 생성을 비활성화하고 싶을 수 있습니다.",
+  "dff222b49488": "`next.config.js`를 열고 `generateEtags` 옵션을 비활성화합니다."
+}

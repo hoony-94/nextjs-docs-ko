@@ -1,0 +1,11 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "f064db214fba": "dynamicParams",
+  "363fa7181a0d": "dynamicParams 라우트 세그먼트 설정 옵션에 대한 API 레퍼런스입니다.",
+  "934e0cb02d11": "`dynamicParams` 옵션을 사용하면 generateStaticParams로 생성되지 않은 동적 세그먼트에 방문했을 때의 동작을 제어할 수 있습니다.",
+  "6f51b46a0fc2": "**`true`**(기본값): `generateStaticParams`에 포함되지 않은 동적 라우트 세그먼트는 요청 시점에 생성됩니다.",
+  "8f55b8c8fb9a": "**`false`**: `generateStaticParams`에 포함되지 않은 동적 라우트 세그먼트는 404를 반환합니다.",
+  "747405882d50": "**알아두면 좋은 점**:",
+  "03475c712ede": "이 옵션은 `pages` 디렉터리에서 사용하던 `getStaticPaths`의 `fallback: true | false | blocking` 옵션을 대체합니다.",
+  "dac90f4d84df": "Cache Components가 활성화된 경우에는 `dynamicParams`를 사용할 수 없습니다."
+}

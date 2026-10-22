@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "source": "next@16.4.2"
+  },
+  "fb9da861bdb8": "typescript",
+  "a1ce8b44aeaa": "프로덕션 빌드 중 Next.js가 TypeScript 에러를 처리하는 방식을 구성하고 사용자 정의 tsconfig 파일을 지정합니다.",
+  "f58344749db3": "`next.config.js`의 `typescript` 옵션으로 TypeScript 동작을 구성합니다.",
+  "6bf5da9c080b": "옵션",
+  "e31d972229de": "옵션",
+  "3deb74565196": "타입",
+  "808d7dca8a74": "기본값",
+  "55f8ebc805e6": "설명",
+  "3965226ad7bc": "TypeScript 에러가 있어도 프로덕션 빌드가 완료되도록 허용합니다.",
+  "adbfacbdc84d": "사용자 정의 `tsconfig.json` 파일의 경로입니다.",
+  "d54a8fec9e12": "프로젝트에 TypeScript 에러가 있으면 Next.js는 **프로덕션 빌드**(`next build`)를 실패시킵니다.",
+  "bc9b9da2c8b7": "애플리케이션에 에러가 있더라도 Next.js가 위험을 감수하고 프로덕션 코드를 생성하게 하려면, 내장된 타입 검사 단계를 비활성화할 수 있습니다.",
+  "819c36ee1f8f": "이 설정은 TypeScript 타입 검사 단계를 완전히 건너뜁니다.",
+  "4626a684834e": "TypeScript를 실행한 뒤 에러를 숨기는 것이 아니라, 검사 자체를 완전히 우회합니다.",
+  "f2e5c88f7277": "비활성화한 경우 빌드 또는 배포 과정에서 반드시 타입 검사를 실행해야 합니다. 그렇지 않으면 매우 위험할 수 있습니다.",
+  "ede37a6c874d": "빌드나 도구에 다른 TypeScript 설정 파일을 사용합니다.",
+  "ef18d50a2f87": "자세한 내용은 TypeScript 구성 페이지를 참고하세요."
+}

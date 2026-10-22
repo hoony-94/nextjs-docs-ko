@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "source": "next@16.4.2"
+  },
+  "19f49d852660": "images",
+  "144ed960f31f": "next/image 로더에 대한 커스텀 구성입니다.",
+  "432b0cb9ea2d": "Next.js에 내장된 이미지 최적화 API 대신 클라우드 제공업체를 사용해 이미지를 최적화하려면 `next.config.js`를 다음과 같이 구성할 수 있습니다.",
+  "18cae869f164": "이 `loaderFile`은 Next.js 애플리케이션 루트를 기준으로 한 파일을 가리켜야 합니다.",
+  "54b37b6b2934": "이 파일은 문자열을 반환하는 함수를 default export해야 합니다. 예를 들면 다음과 같습니다.",
+  "e956f1091659": "또는 `loader` prop을 사용해 각 `next/image` 인스턴스에 함수를 전달할 수도 있습니다.",
+  "881034ddc113": "**알아두면 좋은 점**: 함수를 받는 이미지 로더 파일을 커스터마이즈하려면, 전달된 함수를 직렬화하기 위해 클라이언트 컴포넌트를 사용해야 합니다.",
+  "f0bf88657a98": "내장 이미지 최적화 API와 Image 컴포넌트의 동작을 구성하는 방법에 대해 더 알아보려면, 사용 가능한 옵션이 정리된 이미지 설정 옵션 문서를 참고하세요.",
+  "46d72c1a107b": "로더 구성 예제",
+  "8f137c924a71": "Akamai",
+  "63c971abbf4a": "AWS CloudFront",
+  "e86e55f271e3": "Cloudinary",
+  "a5b966cdcb60": "Cloudflare",
+  "71a15969cba4": "Contentful",
+  "006b49268e42": "Fastly",
+  "0cb86d42ea89": "Gumlet",
+  "0813ba6f11dd": "ImageEngine",
+  "069e70530592": "Imgix",
+  "b099c2d809f2": "PixelBin",
+  "753f86089a75": "Sanity",
+  "8227b929d902": "Sirv",
+  "d33b4ba31378": "Supabase",
+  "3163ac76eb5f": "Thumbor",
+  "228a59681bc2": "Imagekit",
+  "138d80681f82": "Nitrogen AIO",
+  "33ee413fe83f": "ImageKit.io"
+}

@@ -1,0 +1,8 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "af0a20eda54c": "optimizePackageImports",
+  "83817ebfcd24": "Next.js 설정 옵션 optimizePackageImports에 대한 API 레퍼런스입니다.",
+  "f933b7d7a5ea": "일부 패키지는 수백에서 수천 개의 모듈을 export할 수 있으며, 이는 개발 및 프로덕션 환경에서 성능 문제를 일으킬 수 있습니다.",
+  "ce31223fd57a": "패키지를 `experimental.optimizePackageImports`에 추가하면, 여러 named export를 가져오는 import 문을 편리하게 작성하면서도 실제로 사용하는 모듈만 로드합니다.",
+  "2fd2c6c2033a": "다음 라이브러리는 기본적으로 최적화됩니다."
+}

@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "source": "next@16.4.2"
+  },
+  "811a6d5a2e04": "next.config.js",
+  "f002d6eb23f9": "next.config.js로 애플리케이션을 구성하는 방법을 알아봅니다.",
+  "d72c75966b79": "Next.js는 프로젝트 디렉터리 루트(예: `package.json`이 있는 위치)의 `next.config.js` 파일에서 default export하는 방식으로 구성할 수 있습니다.",
+  "7880aae07f89": "ECMAScript 모듈",
+  "84a4922e528e": "`next.config.js`는 JSON 파일이 아니라 일반 Node.js 모듈입니다.",
+  "f4fc629f3a78": "Next.js 서버와 빌드 단계에서 사용되며, 브라우저 빌드에는 포함되지 않습니다.",
+  "03171c0f7500": "ECMAScript 모듈이 필요하다면 `next.config.mjs`를 사용할 수 있습니다:",
+  "e808ea750ea9": "**알아두면 좋은 점**: `.cjs`나 `.cts` 확장자를 사용하는 `next.config`는 현재 지원되지 **않습니다**.",
+  "fcfca2805bd8": "함수 형태의 구성",
+  "4feeadd84781": "함수를 사용할 수도 있습니다:",
+  "2f0f17caa58a": "비동기 구성",
+  "26c428e7a7c3": "Next.js 12.1.0부터는 async 함수를 사용할 수 있습니다:",
+  "f6371a4980da": "단계(Phase)",
+  "9497ec6134ad": "`phase`는 구성이 로드되는 현재 컨텍스트입니다.",
+  "644ebc4a66e1": "사용 가능한 단계를 확인할 수 있습니다.",
+  "c821e5e71620": "단계는 `next/constants`에서 import할 수 있습니다:",
+  "d4a86cb946d4": "TypeScript",
+  "8430fe888253": "프로젝트에서 TypeScript를 사용한다면 `next.config.ts`를 사용해 구성에 TypeScript를 사용할 수 있습니다:",
+  "64bef113dab0": "주석 처리된 줄은 이 파일에 정의된, `next.config.js`에서 허용하는 구성을 넣을 수 있는 위치입니다.",
+  "0651ab6670ff": "하지만 필수인 구성은 없으며, 각 구성이 무엇을 하는지 모두 이해할 필요도 없습니다.",
+  "5cc4be80c835": "대신 이 섹션에서 활성화하거나 수정해야 하는 기능을 찾아보면 무엇을 해야 하는지 알 수 있습니다.",
+  "c44cb11502ad": "대상 Node.js 버전에서 사용할 수 없는 새로운 JavaScript 기능은 사용하지 마세요.",
+  "fb00df2939cf": "`next.config.js`는 Webpack이나 Babel로 파싱되지 않습니다.",
+  "65117fcd0f0c": "이 페이지에서는 사용 가능한 모든 설정 옵션을 설명합니다:",
+  "96e13df8d67e": "단위 테스트 (실험적)",
+  "abf1bf3b03f4": "Next.js 15.1부터 `next/experimental/testing/server` 패키지에 `next.config.js` 파일의 단위 테스트를 돕는 유틸리티가 포함되어 있습니다.",
+  "3c89dd3de569": "`unstable_getResponseFromNextConfig` 함수는 제공된 요청 정보로 `next.config.js`의 `headers`, `redirects`, `rewrites` 함수를 실행하고, 라우팅 결과를 담은 `NextResponse`를 반환합니다.",
+  "6b74be0c93ca": "`unstable_getResponseFromNextConfig`의 응답은 `next.config.js` 필드만 고려하며 프록시나 파일 시스템 라우트는 고려하지 않으므로, 프로덕션에서의 결과는 단위 테스트와 다를 수 있습니다."
+}

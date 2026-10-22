@@ -1,0 +1,20 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "135a87a3e36f": "turbopackRustReactCompiler",
+  "c1197083b05c": "Babel 변환 대신 Turbopack에서 React Compiler의 네이티브 Rust 포팅 버전을 사용합니다.",
+  "1c50dfa1e0d0": "`experimental.turbopackRustReactCompiler` 옵션은 React Compiler의 네이티브 Rust 버전을 활성화합니다. 이 버전은 표준 Babel 버전처럼 Node.js를 거치지 않고 Turbopack 내부에서 네이티브 코드로 직접 실행됩니다.",
+  "2bb835086acc": "일반적으로 눈에 띄는 성능 향상을 얻을 수 있습니다.",
+  "5249dd59c100": "이 옵션은 기본값이 되기 전에 피드백을 수집하기 위해 실험적 기능으로 출시되었습니다.",
+  "79fc372dc790": "알아두면 좋은 점",
+  "788b7179b888": "이 옵션을 사용하려면 `reactCompiler`가 활성화되어 있어야 합니다.",
+  "b9cf76de89dd": "이 옵션은 어떤 구현을 실행할지 선택할 뿐, 컴파일러 자체를 켜지는 않습니다.",
+  "3a932eba7aa4": "이 옵션은 Turbopack에서만 지원됩니다.",
+  "ea7a6a743088": "webpack과 함께 사용하면 에러가 발생합니다.",
+  "ece04f8b9ff4": "이 옵션을 활성화하면 `babel-plugin-react-compiler`를 설치할 필요가 없습니다.",
+  "e0481039ee37": "Rust 컴파일러는 Turbopack 내부에서 네이티브로 실행됩니다.",
+  "38580418bd2d": "컴파일러 사용 방법에 대한 자세한 내용은 `reactCompiler` 옵션 문서를 참고하세요.",
+  "6974ab729b62": "버전 기록",
+  "2da600bf9404": "버전",
+  "8aa57de6dce6": "변경 사항",
+  "ef72294418ff": "네이티브 Rust React Compiler를 위한 실험적 옵션 `turbopackRustReactCompiler`가 도입되었습니다."
+}

@@ -1,0 +1,12 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "3a3a46fce614": "webVitalsAttribution",
+  "8ddd9c595a4a": "webVitalsAttribution 옵션을 사용해 Web Vitals 문제의 원인을 정확히 찾아내는 방법을 알아봅니다.",
+  "b6b60f07be5d": "Web Vitals 관련 문제를 디버깅할 때는 문제의 원인을 정확히 찾아낼 수 있으면 도움이 되는 경우가 많습니다.",
+  "09c27891d283": "예를 들어 Cumulative Layout Shift(CLS)의 경우, 가장 큰 단일 레이아웃 이동이 발생했을 때 처음으로 이동한 요소를 알고 싶을 수 있습니다.",
+  "211fc215214f": "또는 Largest Contentful Paint(LCP)의 경우, 페이지의 LCP에 해당하는 요소를 식별하고 싶을 수 있습니다.",
+  "777e9ddcc982": "LCP 요소가 이미지라면 이미지 리소스의 URL을 알면 최적화해야 할 에셋을 찾는 데 도움이 됩니다.",
+  "2c6cc7382243": "Web Vitals 점수에 가장 크게 기여한 요인을 정확히 찾아내는 것, 즉 어트리뷰션(attribution)을 통해 PerformanceEventTiming, PerformanceNavigationTiming, PerformanceResourceTiming 항목과 같은 더 자세한 정보를 얻을 수 있습니다.",
+  "fa0fa5067359": "Next.js에서 어트리뷰션은 기본적으로 비활성화되어 있지만, `next.config.js`에 다음과 같이 지정하여 **지표별로** 활성화할 수 있습니다.",
+  "c4b8838f4152": "유효한 어트리뷰션 값은 `NextWebVitalsMetric` 타입에 지정된 모든 `web-vitals` 지표입니다."
+}

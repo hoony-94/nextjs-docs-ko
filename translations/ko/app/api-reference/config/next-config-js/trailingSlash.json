@@ -1,0 +1,19 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "99c09a674c1a": "trailingSlash",
+  "8c47cb845680": "Next.js 페이지가 후행 슬래시를 포함하거나 포함하지 않은 형태로 처리되도록 구성합니다.",
+  "74c3a14c4621": "기본적으로 Next.js는 후행 슬래시가 있는 URL을 후행 슬래시가 없는 URL로 리디렉션합니다.",
+  "beea6bf6fbbe": "예를 들어 `/about/`은 `/about`으로 리디렉션됩니다.",
+  "3b8f48149f07": "이 동작을 반대로 구성하여 후행 슬래시가 없는 URL을 후행 슬래시가 있는 URL로 리디렉션하도록 할 수 있습니다.",
+  "89cb537b9295": "`next.config.js`를 열고 `trailingSlash` 설정을 추가하세요.",
+  "abc7777cb134": "이 옵션을 설정하면 `/about` 같은 URL이 `/about/`으로 리디렉션됩니다.",
+  "0aca7bce74a4": "`trailingSlash: true`를 사용할 때 일부 URL은 예외로 처리되어 후행 슬래시가 추가되지 않습니다.",
+  "3b83c72a1c9c": "확장자가 있는 파일과 같은 정적 파일 URL",
+  "0c3d98b6f656": "`.well-known/` 아래의 모든 경로",
+  "3829d0b5de89": "예를 들어 `/file.txt`, `images/photos/picture.png`, `.well-known/subfolder/config.json` 같은 URL은 변경되지 않습니다.",
+  "ec22c1df1a5c": "`output: \"export\"` 설정과 함께 사용하면 `/about` 페이지는 기본값인 `/about.html` 대신 `/about/index.html`로 출력됩니다.",
+  "6974ab729b62": "버전 기록",
+  "2da600bf9404": "버전",
+  "8aa57de6dce6": "변경 사항",
+  "88c8e46e8deb": "`trailingSlash`가 추가되었습니다."
+}

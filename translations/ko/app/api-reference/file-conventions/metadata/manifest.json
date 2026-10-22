@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "source": "next@16.4.2"
+  },
+  "ca642a226869": "manifest.json",
+  "768c76fd0316": "manifest.json 파일에 대한 API 레퍼런스입니다.",
+  "783f49f6c49d": "`app` 디렉터리의 **루트**에 Web Manifest 사양을 따르는 `manifest.(json|webmanifest)` 파일을 추가하거나 생성하여, 브라우저에 웹 애플리케이션에 대한 정보를 제공할 수 있습니다.",
+  "765c6ef1bde3": "정적 매니페스트 파일",
+  "72cfb27ea34d": "매니페스트 파일 생성하기",
+  "78f9d918d20b": "`Manifest` 객체를 반환하는 `manifest.js` 또는 `manifest.ts` 파일을 추가합니다.",
+  "56fa8600bc7b": "알아두면 좋은 점: `manifest.js`는 요청 시점 API나 동적 설정 옵션을 사용하지 않는 한 기본적으로 캐시되는 특수 라우트 핸들러입니다.",
+  "4565ea20a70f": "Manifest 객체",
+  "3b2511295bff": "manifest 객체에는 새로운 웹 표준에 따라 업데이트될 수 있는 다양한 옵션이 포함되어 있습니다.",
+  "a3b86362536e": "현재 사용 가능한 모든 옵션에 대한 정보는 TypeScript를 사용하는 경우 코드 에디터에서 `MetadataRoute.Manifest` 타입을 참고하거나 MDN 문서를 확인하세요."
+}

@@ -1,0 +1,23 @@
+{
+  "_meta": { "source": "next@16.4.2" },
+  "2836ea7ade03": "버전 14로 업그레이드하기",
+  "766062cc7e02": "Next.js 애플리케이션을 버전 13에서 14로 업그레이드합니다.",
+  "7935a87d66f8": "13에서 14로 업그레이드하기",
+  "67619186be42": "Next.js 버전 14로 업데이트하려면 선호하는 패키지 매니저로 다음 명령을 실행하세요:",
+  "5bec039d1628": "**알아두면 좋은 점:** TypeScript를 사용한다면 `@types/react`와 `@types/react-dom`도 최신 버전으로 업그레이드하세요.",
+  "83a25fade384": "v14 요약",
+  "65037673abe8": "16.x 버전의 지원이 종료(end-of-life)되어 최소 Node.js 버전이 16.14에서 18.17로 상향되었습니다.",
+  "cea23e9dc041": "`next export` 명령은 제거되었으며 `output: 'export'` 설정으로 대체되었습니다.",
+  "fb3abd73add5": "자세한 내용은 문서를 참고하세요.",
+  "348621840a4d": "`ImageResponse`의 `next/server` import는 `next/og`로 이름이 변경되었습니다.",
+  "118cf6560ab7": "import를 안전하고 자동으로 이름 변경할 수 있는 codemod가 제공됩니다.",
+  "27612c743acc": "`@next/font` 패키지는 완전히 제거되었으며 내장 `next/font`로 대체되었습니다.",
+  "86679617c599": "`next-swc`의 WASM 타깃이 제거되었습니다.",
+  "b3ab6d21dd9b": "마이그레이션 체크리스트 검토",
+  "22cc094ab3e1": "앱이 Node.js 18.17 이상과 호환되는 React 18 의존성 및 타입을 사용합니다.",
+  "64dfd91eab05": "정적 내보내기에 `next export` 대신 `output: 'export'`와 `next build`를 사용합니다.",
+  "a051a8ec2187": "`ImageResponse` import가 `next/server` 대신 `next/og`를 사용합니다.",
+  "abcf691a33b3": "폰트 import가 `@next/font` 대신 `next/font`를 사용합니다.",
+  "1a62794a6b9b": "앱이 제거된 `next-swc` WASM 타깃에 의존하지 않습니다.",
+  "1a38ac90759c": "앱에서 지원하는 검사와 영향을 받는 런타임 동작이 모두 통과합니다."
+}

@@ -1,0 +1,6 @@
+{
+  "_meta": { "source": "next@16.4.2" },
+  "e246b032b438": "App Router",
+  "687cfa42aa4d": "App Router는 서버 컴포넌트, Suspense, 서버 함수 등 React의 최신 기능을 사용하는 파일 시스템 기반 라우터입니다.",
+  "931f5d22f256": "**App Router**는 서버 컴포넌트, Suspense, 서버 함수 같은 React의 최신 기능을 사용하는 파일 시스템 기반 라우터입니다."
+}

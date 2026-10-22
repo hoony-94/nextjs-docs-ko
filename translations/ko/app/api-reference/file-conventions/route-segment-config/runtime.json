@@ -1,0 +1,16 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "f2e18ffc17e2": "runtime",
+  "baf943d681be": "runtime 라우트 세그먼트 설정 옵션에 대한 API 레퍼런스입니다.",
+  "fb119123b81b": "`runtime` 옵션을 사용하면 라우트 렌더링에 사용할 JavaScript 런타임을 선택할 수 있습니다.",
+  "022ce2b2ef4c": "**`'nodejs'`**(기본값)",
+  "4584039ab607": "**`'edge'`**(지원 중단)",
+  "747405882d50": "**알아두면 좋은 점**:",
+  "a6fae6d8ff33": "Edge Runtime은 지원 중단(deprecated)되었습니다.",
+  "6cb3bb55f5e0": "라우트 파일에서 `runtime` export를 제거하세요.",
+  "8a4d6d496acc": "Edge Runtime 지원 중단 문서를 참고하세요.",
+  "6fc82b72202a": "Cache Components가 활성화된 경우 `runtime = 'nodejs'`를 포함해 `runtime` export를 제거하세요.",
+  "077300cb3915": "Cache Components는 기본 Node.js 런타임을 사용하며 `runtime` 라우트 세그먼트 설정을 지원하지 않습니다.",
+  "de5d9b9e03c8": "Cache Components로 마이그레이션하기 문서를 참고하세요.",
+  "89d01f44c7da": "이 옵션은 프록시에서 사용할 수 없습니다."
+}

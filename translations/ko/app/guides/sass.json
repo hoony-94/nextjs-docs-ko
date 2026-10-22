@@ -1,0 +1,20 @@
+{
+  "_meta": { "source": "next@16.4.2" },
+  "d673d5d519ec": "Sass 사용하기",
+  "74e32ff51f3c": "Sass를 사용해 Next.js 애플리케이션의 스타일을 지정합니다.",
+  "355516d8d462": "Next.js는 패키지를 설치하면 `.scss`와 `.sass` 확장자를 모두 사용해 Sass와 통합할 수 있도록 기본 지원합니다.",
+  "386cc937e092": "CSS Modules와 `.module.scss` 또는 `.module.sass` 확장자를 통해 컴포넌트 수준의 Sass를 사용할 수 있습니다.",
+  "8621ee5e9d5c": "먼저 `sass`를 설치합니다:",
+  "747405882d50": "**알아두면 좋은 점**:",
+  "eed7415ff79f": "Sass는 두 가지 구문을 지원하며, 각각 고유한 확장자를 사용합니다.",
+  "c27b4b27cddf": "`.scss` 확장자는 SCSS 구문을, `.sass` 확장자는 들여쓰기 구문(\"Sass\")을 사용해야 합니다.",
+  "cdfd682a09c3": "어떤 것을 선택해야 할지 잘 모르겠다면, CSS의 상위 집합이어서 들여쓰기 구문(\"Sass\")을 배울 필요가 없는 `.scss` 확장자로 시작하세요.",
+  "4b42350ad2b9": "Sass 옵션 커스터마이징",
+  "3a73f07f1bae": "Sass 옵션을 설정하려면 `next.config`에서 `sassOptions`를 사용하세요.",
+  "8781d615fd77": "구현체",
+  "833276a35ff5": "`implementation` 속성을 사용해 사용할 Sass 구현체를 지정할 수 있습니다.",
+  "56ae5fd298a2": "기본적으로 Next.js는 `sass` 패키지를 사용합니다.",
+  "de4dfc8e8bb7": "Sass 변수",
+  "ca32a59f3143": "Next.js는 CSS Module 파일에서 export한 Sass 변수를 지원합니다.",
+  "c52c49cdc475": "예를 들어 export한 `primaryColor` Sass 변수를 사용하는 경우는 다음과 같습니다:"
+}

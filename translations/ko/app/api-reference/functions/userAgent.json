@@ -1,0 +1,23 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "91cb6d1538d3": "userAgent",
+  "fb69bad58a6a": "userAgent 헬퍼는 요청의 user agent 객체와 상호작용할 수 있는 추가 속성과 메서드로 Web Request API를 확장합니다.",
+  "8ba016710e17": "요청이 알려진 봇에서 온 것인지를 나타내는 boolean 값입니다.",
+  "9fe9276349c9": "요청에 사용된 브라우저에 대한 정보를 담은 객체입니다.",
+  "f6fbf38bed9c": "`name`: 브라우저의 이름을 나타내는 문자열이며, 식별할 수 없으면 `undefined`입니다.",
+  "872cdbd548bc": "`version`: 브라우저의 버전을 나타내는 문자열 또는 `undefined`입니다.",
+  "8e55774f25af": "요청에 사용된 기기에 대한 정보를 담은 객체입니다.",
+  "6a5ff7e3d562": "`model`: 기기의 모델을 나타내는 문자열 또는 `undefined`입니다.",
+  "aadb5bdb9d29": "`type`: `console`, `mobile`, `tablet`, `smarttv`, `wearable`, `embedded`와 같은 기기의 유형을 나타내는 문자열 또는 `undefined`입니다.",
+  "f7dc16df07c2": "`vendor`: 기기의 제조사를 나타내는 문자열 또는 `undefined`입니다.",
+  "bcc4850ae395": "브라우저 엔진에 대한 정보를 담은 객체입니다.",
+  "aed33833fc3f": "`name`: 엔진의 이름을 나타내는 문자열입니다.",
+  "3cba3b86abc0": "가능한 값으로는 `Amaya`, `Blink`, `EdgeHTML`, `Flow`, `Gecko`, `Goanna`, `iCab`, `KHTML`, `Links`, `Lynx`, `NetFront`, `NetSurf`, `Presto`, `Tasman`, `Trident`, `w3m`, `WebKit` 또는 `undefined`가 있습니다.",
+  "d1e570b29a28": "`version`: 엔진의 버전을 나타내는 문자열 또는 `undefined`입니다.",
+  "548f0d6e7458": "운영 체제에 대한 정보를 담은 객체입니다.",
+  "108c4a752a54": "`name`: 운영 체제의 이름을 나타내는 문자열 또는 `undefined`입니다.",
+  "520cbac6e2a1": "`version`: 운영 체제의 버전을 나타내는 문자열 또는 `undefined`입니다.",
+  "cbc691b46e82": "CPU 아키텍처에 대한 정보를 담은 객체입니다.",
+  "a2ee48d9dfa5": "`architecture`: CPU의 아키텍처를 나타내는 문자열입니다.",
+  "3cb9e09a1ad9": "가능한 값으로는 `68k`, `amd64`, `arm`, `arm64`, `armhf`, `avr`, `ia32`, `ia64`, `irix`, `irix64`, `mips`, `mips64`, `pa-risc`, `ppc`, `sparc`, `sparc64` 또는 `undefined`가 있습니다"
+}

@@ -1,0 +1,19 @@
+{
+  "_meta": { "source": "next@16.4.2" },
+  "e4de95bf6b26": "어댑터에서 PPR 구현하기",
+  "6da130f9745e": "폴백 출력과 캐시 훅을 사용해 어댑터에서 Partial Prerendering 지원을 구현합니다.",
+  "8564feaf9c1d": "부분적으로 사전 렌더링된 App Router 라우트의 경우, `onBuildComplete`는 PPR을 미리 채우고(seed) 재개하는 데 필요한 데이터를 제공합니다:",
+  "fdd30fa2ebca": "`outputs.prerenders[].fallback.filePath`: 생성된 폴백 셸(예: HTML)의 경로",
+  "00750963e551": "`outputs.prerenders[].fallback.postponedState`: 렌더링을 재개하는 데 사용되는 직렬화된 보류(postponed) 상태",
+  "936409f2498b": "1. 빌드 시점에 셸과 보류 상태 미리 채우기",
+  "d72fa450056f": "2. 런타임 흐름: 캐시된 셸을 제공하고 백그라운드에서 재개하기",
+  "ea51f5215028": "요청 시점에 다음을 이어 붙인 단일 응답을 스트리밍할 수 있습니다:",
+  "ba950e53621f": "캐시된 HTML 셸 스트림",
+  "447a71614bff": "재개된 렌더링 스트림(보류 상태와 함께 `handler`를 호출한 후 생성됨)",
+  "cc25904ece79": "3. `requestMeta.onCacheEntryV2`로 캐시 업데이트하기",
+  "b2e705c622b8": "`requestMeta.onCacheEntryV2`는 응답 캐시 항목을 조회하거나 생성할 때 호출됩니다.",
+  "014707cfed6f": "이를 사용해 업데이트된 셸/보류 데이터를 저장합니다.",
+  "8a7f2a8cb1ae": "`requestMeta.onCacheEntry`도 여전히 동작하지만 지원 중단(deprecated)되었습니다.",
+  "f7a41fb41a82": "`requestMeta.onCacheEntryV2`를 사용하는 것이 좋습니다.",
+  "1aab4fa680dc": "어댑터가 내부적으로 `onCacheCallback` 추상화를 사용한다면, 이를 `requestMeta.onCacheEntryV2`에 연결하세요."
+}

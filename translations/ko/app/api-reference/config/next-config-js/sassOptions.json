@@ -1,0 +1,10 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "df45aff83b00": "sassOptions",
+  "9c7cc67a66e5": "Sass 옵션을 구성합니다.",
+  "8cdfbee70fd8": "`sassOptions`를 사용하면 Sass 컴파일러를 구성할 수 있습니다.",
+  "747405882d50": "**알아두면 좋은 점:**",
+  "247a775394c8": "Next.js는 그 밖의 가능한 속성을 관리하지 않으므로,`sassOptions`는 `implementation` 외에는 타입이 지정되어 있지 않습니다.",
+  "a42a8544afa8": "커스텀 Sass 함수를 정의하는 `functions` 속성은 webpack에서만 지원됩니다.",
+  "7a14c591b98e": "Turbopack은 Rust 기반 아키텍처로 인해 이 옵션으로 전달된 JavaScript 함수를 직접 실행할 수 없으므로, Turbopack을 사용할 때는 커스텀 Sass 함수를 사용할 수 없습니다."
+}

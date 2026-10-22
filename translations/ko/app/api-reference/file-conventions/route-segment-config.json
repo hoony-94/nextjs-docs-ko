@@ -1,0 +1,16 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "f5ecbc94c1a9": "라우트 세그먼트 설정",
+  "56d8ad640163": "Next.js 라우트 세그먼트의 옵션을 구성하는 방법을 알아봅니다.",
+  "f27b588856e0": "라우트 세그먼트 설정 옵션을 사용하면 다음 변수를 직접 export하여 페이지, 레이아웃 또는 라우트 핸들러의 동작을 구성할 수 있습니다:",
+  "e31d972229de": "옵션",
+  "3deb74565196": "타입",
+  "808d7dca8a74": "기본값",
+  "e65dd250a300": "배포 플랫폼에서 설정",
+  "5b4af4d2bd85": "Cache Components가 활성화된 경우 페이지와 레이아웃은 다음 옵션도 지원합니다:",
+  "6974ab729b62": "버전 기록",
+  "2da600bf9404": "버전",
+  "d1cc55bc1833": "Cache Components 활성화 시 `dynamic`, `dynamicParams`, `revalidate`, `fetchCache` 제거. 캐싱과 재검증(이전 모델) 문서 참고.",
+  "f4f7405b82aa": "`export const experimental_ppr = true` 제거. codemod 제공.",
+  "127d5c770d95": "`export const runtime = \"experimental-edge\"` 지원 중단(deprecated). codemod 제공."
+}

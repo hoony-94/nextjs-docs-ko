@@ -1,0 +1,17 @@
+{
+  "_meta": { "source": "next@16.4.2" },
+  "2b2e6cef1bba": "Next.js 애플리케이션에 Tailwind CSS v3 설치하기",
+  "78c9e5306662": "더 넓은 브라우저 지원을 위해 Tailwind CSS v3로 Next.js 애플리케이션의 스타일을 지정합니다.",
+  "9f614513c329": "이 가이드에서는 Next.js 애플리케이션에 Tailwind CSS v3를 설치하는 방법을 안내합니다.",
+  "48b736f46045": "**알아두면 좋은 점:** 최신 Tailwind 4 설정은 Tailwind CSS 설정 안내를 참고하세요.",
+  "e7684f56c1e5": "Tailwind v3 설치하기",
+  "0a9ceea4fdc8": "Tailwind CSS와 피어 의존성을 설치한 다음, `init` 명령을 실행해 `tailwind.config.js` 파일과 `postcss.config.js` 파일을 모두 생성합니다:",
+  "b84b10e37293": "Tailwind v3 설정하기",
+  "f7a0f138a083": "`tailwind.config.js` 파일에서 템플릿 경로를 설정합니다:",
+  "3d8797471bfd": "전역 CSS 파일에 Tailwind 지시어를 추가합니다:",
+  "7f33665ea76a": "루트 레이아웃에서 CSS 파일을 import합니다:",
+  "fd03956d91de": "클래스 사용하기",
+  "3d94b929ea43": "Tailwind CSS를 설치하고 전역 스타일을 추가하면 애플리케이션에서 Tailwind의 유틸리티 클래스를 사용할 수 있습니다.",
+  "4a8d43287a3e": "Turbopack과 함께 사용하기",
+  "80448f7d7535": "Next.js 13.1부터 Turbopack에서 Tailwind CSS와 PostCSS를 지원합니다."
+}

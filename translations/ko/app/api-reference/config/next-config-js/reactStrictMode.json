@@ -1,0 +1,14 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "e1cf62dbf03e": "reactStrictMode",
+  "b5d4a7fc17ac": "이제 Next.js 런타임 전체가 Strict Mode를 준수하며, 여기에서 이를 활성화하는 방법을 알아볼 수 있습니다.",
+  "105089607390": "**알아두면 좋은 점**: Next.js 13.5.1부터 `app` 라우터에서는 Strict Mode가 기본적으로 `true`이므로, 위 설정은 `pages`에서만 필요합니다.",
+  "78a641d3dc18": "`reactStrictMode: false`로 설정하면 여전히 Strict Mode를 비활성화할 수 있습니다.",
+  "0c0ae5c085a9": "**권장**: React의 향후 변화에 애플리케이션이 더 잘 대비할 수 있도록 Next.js 애플리케이션에서 Strict Mode를 활성화할 것을 강력히 권장합니다.",
+  "d579d714a22f": "React의 Strict Mode는 애플리케이션의 잠재적인 문제를 드러내기 위한 개발 모드 전용 기능입니다.",
+  "78b4db314569": "안전하지 않은 생명주기, 레거시 API 사용 및 기타 여러 기능을 식별하는 데 도움이 됩니다.",
+  "849e484f1416": "Next.js 런타임은 Strict Mode를 준수합니다.",
+  "f3bd5a87c185": "Strict Mode를 활성화하려면 `next.config.js`에서 다음 옵션을 구성하세요.",
+  "6498e7c1f86f": "여러분이나 팀이 애플리케이션 전체에 Strict Mode를 사용할 준비가 되지 않았더라도 괜찮습니다!",
+  "9e6b25fc164d": "`<React.StrictMode>`를 사용해 페이지 단위로 점진적으로 마이그레이션할 수 있습니다."
+}

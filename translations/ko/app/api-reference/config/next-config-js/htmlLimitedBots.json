@@ -1,0 +1,21 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "f36b6c0210e2": "htmlLimitedBots",
+  "67e4d9e45dbf": "블로킹 메타데이터를 받아야 하는 사용자 에이전트 목록을 지정합니다.",
+  "9505ed2b7488": "`htmlLimitedBots` 구성을 사용하면 스트리밍 메타데이터 대신 블로킹 메타데이터를 받아야 하는 사용자 에이전트 목록을 지정할 수 있습니다.",
+  "032aa19717b0": "기본 목록",
+  "c8d9ded2ce21": "Next.js에는 다음을 포함한 HTML 제한 봇의 기본 목록이 들어 있습니다.",
+  "3c473e65e2f2": "Google 크롤러(예: Mediapartners-Google, AdsBot-Google, Google-PageRenderer)",
+  "bcb0478097e5": "Bingbot",
+  "e7be7859b313": "Twitterbot",
+  "9fbb94b5162e": "Slackbot",
+  "74ad86680d37": "전체 목록은 여기에서 확인하세요.",
+  "c9887a98a8f9": "`htmlLimitedBots` 구성을 지정하면 Next.js의 기본 목록을 재정의합니다.",
+  "13b33dd8d365": "다만 이는 고급 동작이며, 대부분의 경우 기본값으로 충분합니다.",
+  "03bf0a54b86f": "비활성화",
+  "b2f1868e7ad3": "스트리밍 메타데이터를 완전히 비활성화하려면 다음과 같이 합니다.",
+  "6974ab729b62": "버전 기록",
+  "2da600bf9404": "버전",
+  "8aa57de6dce6": "변경 사항",
+  "9888451d4586": "`htmlLimitedBots` 옵션이 도입되었습니다."
+}

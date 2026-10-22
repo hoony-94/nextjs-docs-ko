@@ -1,0 +1,7 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "fad5d3cbe72c": "poweredByHeader",
+  "410f2eaa81a6": "Next.js는 기본적으로 `x-powered-by` 헤더를 추가하며, 여기에서 이를 비활성화하는 방법을 알아볼 수 있습니다.",
+  "c39db68d7418": "기본적으로 Next.js는 `x-powered-by` 헤더를 추가합니다.",
+  "7b29c6e323b3": "이를 비활성화하려면 `next.config.js`를 열고 `poweredByHeader` 설정을 끄세요."
+}

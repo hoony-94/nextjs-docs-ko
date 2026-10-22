@@ -1,0 +1,12 @@
+{
+  "_meta": {
+    "source": "next@16.4.2"
+  },
+  "105b73f6271f": "middleware.js",
+  "1af7587fb5f7": "지원 중단(deprecated)되어 proxy.js로 이름이 바뀐 middleware.js 파일에 대한 API 레퍼런스입니다.",
+  "65a3a41173ee": "`middleware.js` 파일 규칙은 Next.js 16에서 **지원 중단(deprecated)**되었으며 `proxy.js`로 이름이 변경되었습니다.",
+  "e1bdb979bd01": "모든 기능은 그대로이며, 파일 이름과 export 이름만 바뀌었습니다.",
+  "d7a6c738edd4": "마이그레이션 방법에 대한 자세한 내용은 프록시로 마이그레이션 섹션을 참고하세요.",
+  "a6b85d6e220c": "다음 명령어를 실행하면 자동으로 마이그레이션할 수 있습니다:",
+  "4a4f65a08817": "전체 문서는 `proxy.js` API 레퍼런스를 참고하세요."
+}

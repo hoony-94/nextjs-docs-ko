@@ -1,0 +1,17 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "7b3408797c52": "src 폴더",
+  "f9c0f83ebe93": "루트 `pages` 디렉터리 대신 `src` 폴더 아래에 페이지를 저장합니다.",
+  "f8d872722fdd": "프로젝트 루트에 Next.js의 특수 디렉터리인 `app` 또는 `pages`를 두는 대신, Next.js는 애플리케이션 코드를 `src` 폴더 아래에 두는 일반적인 패턴도 지원합니다.",
+  "6f4de0997da2": "이렇게 하면 주로 프로젝트 루트에 위치하는 프로젝트 설정 파일과 애플리케이션 코드가 분리되며, 일부 개발자와 팀은 이 방식을 선호합니다.",
+  "ebbd6fa72be9": "`src` 폴더를 사용하려면 `app` Router 폴더 또는 `pages` Router 폴더를 각각 `src/app` 또는 `src/pages`로 옮기세요.",
+  "747405882d50": "**알아두면 좋은 점**:",
+  "7f4facf838dd": "`/public` 디렉터리는 프로젝트 루트에 그대로 두어야 합니다.",
+  "637e60304e3f": "`package.json`, `next.config.js`, `tsconfig.json` 같은 설정 파일은 프로젝트 루트에 그대로 두어야 합니다.",
+  "bb07190c5a54": "`.env.*` 파일은 프로젝트 루트에 그대로 두어야 합니다.",
+  "753b3e9aae3e": "루트 디렉터리에 `app` 또는 `pages`가 있으면 `src/app` 또는 `src/pages`는 무시됩니다.",
+  "ce78c3ca9f81": "`src`를 사용하는 경우 `/components`나 `/lib` 같은 다른 애플리케이션 폴더도 함께 옮기게 될 것입니다.",
+  "1741e871625a": "프록시를 사용하는 경우 `src` 폴더 내부에 위치하도록 하세요.",
+  "9ee64cd588b8": "Tailwind CSS를 사용하는 경우 `tailwind.config.js` 파일의 content 섹션에 `/src` 접두사를 추가해야 합니다.",
+  "f15a52ed2911": "`@/*`와 같은 import용 TypeScript 경로를 사용하는 경우 `tsconfig.json`의 `paths` 객체에 `src/`가 포함되도록 업데이트해야 합니다."
+}

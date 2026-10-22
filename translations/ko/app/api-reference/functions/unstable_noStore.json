@@ -1,0 +1,19 @@
+{
+  "_meta": { "source": "next@16.4.2" },
+  "8424acc914b2": "unstable_noStore",
+  "8165b29af19a": "unstable_noStore 함수에 대한 API 레퍼런스입니다.",
+  "2caeb3d6e1b9": "**버전 15부터는 `unstable_noStore` 대신 `connection`을 사용하는 것을 권장합니다.**",
+  "1b0b097764b1": "`unstable_noStore`를 사용하면 선언적으로 사전 렌더링에서 제외하고, 특정 컴포넌트가 캐시되지 않아야 함을 나타낼 수 있습니다.",
+  "747405882d50": "**알아두면 좋은 점**:",
+  "76963d051600": "`unstable_noStore`는 `fetch`에 `cache: 'no-store'`를 지정하는 것과 같습니다",
+  "90e3e2b9089e": "`unstable_noStore`는 더 세밀하고 컴포넌트 단위로 사용할 수 있으므로 `export const dynamic = 'force-dynamic'`보다 권장됩니다",
+  "e5c7eb4953b2": "`unstable_cache` 안에서 `unstable_noStore`를 사용해도 정적 생성에서 제외되지 않습니다.",
+  "87e3ef7b8663": "대신 캐시 설정에 따라 결과를 캐시할지 여부가 결정됩니다.",
+  "0bb18642b70b": "사용법",
+  "277d4549228c": "`fetch`에 `cache: 'no-store'`, `next: { revalidate: 0 }` 같은 추가 옵션을 전달하고 싶지 않거나 `fetch`를 사용할 수 없는 경우, 이 모든 사용 사례를 대신해 `noStore()`를 사용할 수 있습니다.",
+  "6974ab729b62": "버전 기록",
+  "2da600bf9404": "버전",
+  "8aa57de6dce6": "변경 사항",
+  "84ef0336d201": "`unstable_noStore`가 지원 중단(deprecated)되고 `connection`으로 대체되었습니다.",
+  "c551e4c460b3": "`unstable_noStore`가 도입되었습니다."
+}

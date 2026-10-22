@@ -1,0 +1,20 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "a7d4d7719f1c": "useTypeScriptCli",
+  "bf0c7c9819f5": "프로덕션 빌드 중 타입 검사에 프로젝트 로컬 TypeScript CLI를 실행합니다.",
+  "16638de64c67": "기본적으로 `next build`는 TypeScript JavaScript 컴파일러 API를 로드하는 대신 프로젝트 로컬 `tsc` 명령을 실행합니다.",
+  "b5a0955c2cad": "이를 통해 TypeScript 6을 지원하며, JavaScript API를 아직 사용할 수 없는 TypeScript 7도 사용할 수 있습니다.",
+  "28319de22c1f": "프로젝트에 TypeScript 7을 설치합니다.",
+  "d671fb23ab6a": "CLI 검사기는 기본적으로 활성화되어 있습니다.",
+  "477a79d43a55": "대신 TypeScript JavaScript 컴파일러 API를 사용하려면 `experimental.useTypeScriptCli`를 `false`로 설정합니다.",
+  "b5580b7b48e9": "TypeScript 7을 사용하는 중에 이 기능을 끄면, TypeScript JavaScript 컴파일러 API를 사용할 수 없으므로 `next build`가 종료됩니다.",
+  "70cb647a88bd": "동작",
+  "5c1548943b68": "Next.js는 검사기를 실행하기 전에 계속해서 `next-env.d.ts`와 라우트 타입을 생성하고 권장 `tsconfig` 설정을 적용합니다.",
+  "e704a127e4e8": "TypeScript 진단 결과는 `tsc`에서 그대로 출력됩니다.",
+  "66166df8d911": "Next.js 전용 코드 프레임과 에러 메시지 재작성은 적용되지 않습니다.",
+  "efdc7d4337fc": "구성된 `tsconfig` 파일이 선택한 프로젝트 전체를 검사하며, 포함된 경우 테스트 파일과 `.next/dev/types`도 검사 대상이 됩니다.",
+  "a0e47a41bba4": "`--debug-build-paths` 옵션은 이 검사 범위를 제한하지 않으며, CLI 검사기와 함께 사용하면 경고가 출력됩니다.",
+  "8831081875d6": "`typescript.tsconfigPath`는 `tsc`에 전달할 프로젝트를 선택합니다.",
+  "53a5dda1cf84": "`typescript.ignoreBuildErrors`는 CLI 검사기를 포함한 타입 검사 단계를 건너뜁니다.",
+  "ba09ce910c29": "Next.js에서 TypeScript 7을 사용하는 방법에 대해 자세히 알아보세요."
+}

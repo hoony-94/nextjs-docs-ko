@@ -1,0 +1,7 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "7cfb3e41d813": "mdxRs",
+  "6d8e0423a986": "새로운 Rust 컴파일러를 사용해 App Router에서 MDX 파일을 컴파일합니다.",
+  "ae6d99417cbd": "`@next/mdx`와 함께 실험적으로 사용합니다.",
+  "92aa39f5e210": "새로운 Rust 컴파일러를 사용해 MDX 파일을 컴파일합니다."
+}

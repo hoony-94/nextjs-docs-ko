@@ -1,0 +1,18 @@
+{
+  "_meta": { "source": "next@16.4.2" },
+  "570e9af5f040": "@next/routing으로 라우팅하기",
+  "3e67004a4eac": "`@next/routing`을 사용해 어댑터에 Next.js 라우트 매칭 동작을 적용합니다.",
+  "9d573b425ab3": "`@next/routing`을 사용하면 `onBuildComplete`의 데이터로 Next.js 라우트 매칭 동작을 재현할 수 있습니다.",
+  "9109236444df": "`resolveRoutes()`는 다음을 반환합니다:",
+  "8b2f725f6d70": "`middlewareResponded`: 미들웨어가 이미 응답을 보낸 경우 `true`입니다(이때 어댑터는 엔트리포인트를 호출하지 않아야 합니다).",
+  "c5cef75e3af1": "`externalRewrite`: 라우팅 결과가 외부 재작성 목적지로 확인된 경우의 `URL`입니다.",
+  "79d8b43a90ad": "`redirect`: 요청을 리디렉션해야 할 때 `url`(`URL`)과 `status`를 담은 객체입니다.",
+  "ddaf7c053d27": "`resolvedPathname`: Next.js 라우팅이 선택한 라우트 경로명입니다.",
+  "1581407d8e53": "동적 라우트의 경우 `/blog/[slug]`처럼 매칭된 라우트 템플릿입니다.",
+  "89df9d04e682": "`resolvedQuery`: 재작성이나 미들웨어가 검색 파라미터를 추가하거나 교체한 후의 최종 쿼리입니다.",
+  "9e2ac480127f": "`invocationTarget`: 매칭된 라우트에 대해 호출할 실제 경로명과 쿼리입니다.",
+  "4a7ee1597db5": "`resolvedHeaders`: 라우팅 중에 추가되거나 수정된 헤더를 담은 `Headers` 객체입니다.",
+  "144337d28cfa": "`status`: 라우팅에서 설정한 HTTP 상태 코드입니다(예: 리디렉션 또는 재작성 규칙에서 설정).",
+  "47ee2d5b9cd8": "`routeMatches`: 동적 라우트 세그먼트에서 추출한 이름 있는 매치의 레코드입니다.",
+  "30f02befc5b1": "예를 들어 `/blog/post-1?draft=1`이 `/blog/[slug]?slug=post-1`과 매칭되면, `resolvedPathname`은 `/blog/[slug]`이고 `invocationTarget.pathname`은 `/blog/post-1`입니다."
+}

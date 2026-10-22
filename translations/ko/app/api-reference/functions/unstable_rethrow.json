@@ -1,0 +1,19 @@
+{
+  "_meta": { "source": "next@16.4.2" },
+  "086ef5e65c46": "unstable_rethrow",
+  "1bcccc83afb5": "unstable_rethrow 함수에 대한 API 레퍼런스입니다.",
+  "159767cf1c1d": "`unstable_rethrow`를 사용하면 애플리케이션 코드에서 발생한 에러를 처리하려 할 때 Next.js가 throw하는 내부 에러까지 잡아 버리는 것을 피할 수 있습니다.",
+  "3d6c93606ce0": "예를 들어 `notFound` 함수를 호출하면 Next.js 내부 에러가 throw되고 `not-found.js` 컴포넌트가 렌더링됩니다.",
+  "f9244ab55610": "하지만 `try/catch` 문의 `try` 블록 안에서 사용하면 에러가 잡혀서 `not-found.js`가 렌더링되지 않습니다:",
+  "607ca5958ec6": "`unstable_rethrow` API를 사용하면 내부 에러를 다시 throw하여 예상된 동작을 계속 진행할 수 있습니다:",
+  "6d55b1772a8c": "다음 Next.js API는 에러를 throw하는 방식에 의존하며, 이 에러는 다시 throw되어 Next.js가 직접 처리해야 합니다:",
+  "18908ffb7275": "라우트 세그먼트가 정적이 아니면 에러를 throw하도록 표시되어 있다면, 요청 시점 API 호출도 에러를 throw하며 이 에러 역시 개발자가 잡아서는 안 됩니다.",
+  "df88a960915f": "Partial Prerendering(PPR)도 이 동작에 영향을 준다는 점에 유의하세요.",
+  "40f20060a463": "해당 API는 다음과 같습니다:",
+  "747405882d50": "**알아두면 좋은 점**:",
+  "2404a320f953": "이 메서드는 catch 블록의 맨 위에서 호출해야 하며, 에러 객체를 유일한 인수로 전달합니다.",
+  "cc538e1f9947": "프로미스의 `.catch` 핸들러 안에서도 사용할 수 있습니다.",
+  "be7c3a1f73d9": "에러를 throw하는 API 호출을 캡슐화하고 **호출자**가 예외를 처리하도록 하면 `unstable_rethrow`를 사용하지 않아도 될 수 있습니다.",
+  "7462affd421f": "잡은 예외에 애플리케이션 에러와 프레임워크가 제어하는 예외(`redirect()`나 `notFound()` 등)가 모두 포함될 수 있는 경우에만 `unstable_rethrow`를 사용하세요.",
+  "f0bdbecf7c22": "리소스 정리(인터벌이나 타이머 해제 등)는 `unstable_rethrow`를 호출하기 전이나 `finally` 블록 안에서 수행해야 합니다."
+}

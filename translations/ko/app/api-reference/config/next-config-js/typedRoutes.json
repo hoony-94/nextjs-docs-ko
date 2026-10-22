@@ -1,0 +1,8 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "eb7593397f4d": "typedRoutes",
+  "9bafd088bed4": "정적으로 타입이 지정된 링크를 지원하도록 활성화합니다.",
+  "7af30fa5eec5": "**참고**: 이 옵션은 안정 버전으로 지정되었으므로 `experimental.typedRoutes` 대신 `typedRoutes`를 사용해야 합니다.",
+  "5e40ca799400": "정적으로 타입이 지정된 링크를 지원합니다.",
+  "bb724c65c3e4": "이 기능을 사용하려면 프로젝트에서 TypeScript를 사용해야 합니다."
+}

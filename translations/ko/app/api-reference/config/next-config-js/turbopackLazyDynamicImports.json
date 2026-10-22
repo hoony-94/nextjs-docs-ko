@@ -1,0 +1,20 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "6e8a992de600": "turbopackLazyDynamicImports",
+  "edd4028b0509": "개발 중에 클라이언트 측 동적 import를 처음 요청될 때 컴파일합니다.",
+  "f3a7b060d5a8": "`experimental.turbopackLazyDynamicImports` 옵션은 `next dev` 중에 브라우저가 처음 요청할 때까지 클라이언트 측 동적 `import()` 대상의 컴파일을 미룹니다.",
+  "1dd6a17cb403": "동작 방식",
+  "db9d26e5cac2": "`turbopackLazyDynamicImports`를 활성화하면 Turbopack은 브라우저가 해당 청크를 요청할 때까지 클라이언트 측 동적 `import()` 대상의 컴파일을 기다립니다.",
+  "f70ad2f34f04": "애플리케이션이 한 번도 import하지 않는 코드는 개발 세션 동안 컴파일되지 않은 상태로 남습니다.",
+  "07f59700e58c": "예를 들어 이 클라이언트 컴포넌트의 모듈은 방문자가 버튼을 선택할 때 컴파일됩니다.",
+  "747405882d50": "**알아두면 좋은 점:**",
+  "5c9a466329df": "이 옵션의 기본값은 `false`이며, `next dev` 중의 Turbopack에만 영향을 줍니다.",
+  "4bce066ff475": "프로덕션 빌드는 변경되지 않습니다.",
+  "193565d4b37e": "지연된 모듈의 에러는 Turbopack이 해당 모듈을 처음 컴파일할 때 나타납니다.",
+  "99f5e8fb5ff1": "일부 `next/dynamic` 대상은 여전히 즉시 컴파일됩니다.",
+  "417ecf22998c": "서버에서 클라이언트 컴포넌트를 렌더링하는 중에 도달하는 동적 import를 지연하려면 `turbopackLazyDynamicImportsSSR`을 사용하세요.",
+  "6974ab729b62": "버전 기록",
+  "2da600bf9404": "버전",
+  "8aa57de6dce6": "변경 사항",
+  "669646281c79": "`experimental.turbopackLazyDynamicImports` 설정 옵션이 추가되었습니다."
+}

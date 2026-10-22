@@ -1,0 +1,21 @@
+{
+  "_meta": { "source": "next@16.4.2" },
+  "94aafb45eaff": "엔트리포인트 호출하기",
+  "cb10a1626bab": "어댑터 런타임 컨텍스트로 Node.js 및 Edge 빌드 엔트리포인트를 호출합니다.",
+  "abbd2ab1d097": "빌드 출력 엔트리포인트는 런타임별 요청/응답 타입과 함께 `handler(..., ctx)` 인터페이스를 사용합니다.",
+  "2051cad3a0fe": "Node.js 런타임(`runtime: 'nodejs'`)",
+  "31f497d4e277": "Node.js 엔트리포인트는 다음 인터페이스를 사용합니다:",
+  "8a83e09859e9": "Node.js 엔트리포인트를 직접 호출할 때, 어댑터는 내부 구현에 의존하지 않고 `requestMeta`에 헬퍼를 직접 전달할 수 있습니다.",
+  "aad5fc83a3a2": "지원되는 필드로는 `hostname`, `revalidate`, `render404` 등이 있습니다:",
+  "0ec4fa9cbef9": "Next.js 코어의 관련 파일:",
+  "b47d8c4b6171": "그리고 `packages/next/src/build/templates/pages-api.ts`",
+  "62ffbf318111": "Edge 런타임(`runtime: 'edge'`)(지원 중단)",
+  "a6fae6d8ff33": "Edge Runtime은 지원 중단(deprecated)되었습니다.",
+  "2469ea7ce83c": "새 라우트에는 Node.js 런타임을 사용해야 합니다.",
+  "ebf6ed47ef9e": "Edge 엔트리포인트는 다음 인터페이스를 사용합니다:",
+  "903a6bdf2ff1": "형태는 `handler(..., ctx)`를 중심으로 맞춰져 있지만, Node.js 런타임과 Edge 런타임은 서로 다른 요청/응답 기본 요소를 사용합니다.",
+  "3c46f2ee0cef": "`runtime: 'edge'`인 출력물의 경우, Next.js는 엔트리포인트를 호출하는 데 필요한 표준 메타데이터를 담은 `output.edgeRuntime`도 제공합니다:",
+  "e82cb6298297": "Edge 런타임이 `modulePath`의 청크를 로드하고 평가한 후, `entryKey`를 사용해 전역 엣지 엔트리 레지스트리(`globalThis._ENTRIES`)에서 등록된 엔트리를 읽은 다음, 해당 엔트리의 `handlerExport`를 호출합니다:",
+  "c61eefac4b8a": "파일 이름에서 레지스트리 키나 핸들러 이름을 유추하지 말고 `edgeRuntime`을 사용하세요.",
+  "7af47e4ac8a4": "그리고 `packages/next/src/build/templates/middleware.ts`"
+}

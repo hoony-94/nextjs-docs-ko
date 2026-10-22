@@ -1,0 +1,7 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "21a17ce8f6a8": "httpAgentOptions",
+  "ee4547d7b95c": "Next.js는 기본적으로 HTTP Keep-Alive를 자동으로 사용합니다. 여기에서 HTTP Keep-Alive를 비활성화하는 방법을 알아보세요.",
+  "3c4e8cf42014": "Node.js 18 이전 버전에서 Next.js는 `fetch()`를 undici로 자동 폴리필하고 기본적으로 HTTP Keep-Alive를 활성화합니다.",
+  "ae7be73b0b76": "서버 측의 모든 `fetch()` 호출에 대해 HTTP Keep-Alive를 비활성화하려면 `next.config.js`를 열고 `httpAgentOptions` 구성을 추가합니다."
+}

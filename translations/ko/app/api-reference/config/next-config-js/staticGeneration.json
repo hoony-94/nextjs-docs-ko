@@ -1,0 +1,11 @@
+{
+  "_meta": {"source": "next@16.4.2"},
+  "d901cc1147fe": "staticGeneration*",
+  "f2ced58b3960": "Next.js 애플리케이션에서 정적 생성을 구성하는 방법을 알아봅니다.",
+  "666fb251f05c": "`staticGeneration*` 옵션을 사용하면 고급 사용 사례에 맞게 정적 생성 과정을 구성할 수 있습니다.",
+  "6bb9831c5615": "설정 옵션",
+  "87ad7915cdbf": "사용할 수 있는 옵션은 다음과 같습니다.",
+  "44ca3b5b5b40": "`staticGenerationRetryCount`: 빌드를 실패 처리하기 전에 실패한 페이지 생성을 재시도할 횟수입니다.",
+  "afb38d993e9d": "`staticGenerationMaxConcurrency`: 워커당 처리할 최대 페이지 수입니다.",
+  "500195d8ea23": "`staticGenerationMinPagesPerWorker`: 새 워커를 시작하기 전에 처리해야 할 최소 페이지 수입니다."
+}
