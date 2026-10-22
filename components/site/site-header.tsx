@@ -20,6 +20,9 @@ export async function SiteHeader() {
           <Link href="/docs/app/getting-started">시작하기</Link>
           <Link href="/docs/app/guides">가이드</Link>
           <Link href="/docs/app/api-reference">API 레퍼런스</Link>
+          <Link href="/roadmaps" className="site-nav__roadmap">
+            로드맵
+          </Link>
         </nav>
         <div className="site-header__actions">
           <VersionSwitcher versions={versions} />

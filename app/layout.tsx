@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { SiteHeader } from '@/components/site/site-header';
 import { preferenceScript } from '@/components/site/preferences';
 import { getLatestVersion } from '@/lib/content/versions';
+import { SITE_URL } from '@/lib/site';
 import './globals.css';
 
 const geistSans = Geist({
@@ -16,6 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     template: '%s · Next.js 문서 한국어 (비공식)',
     default: 'Next.js 문서 한국어 (비공식)',

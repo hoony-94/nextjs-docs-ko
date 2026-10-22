@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export function CopyButton({ text }: { text: string }) {
+export function CopyButton({ text, label = '복사', className = 'copy-button' }: { text: string; label?: string; className?: string }) {
   const [copied, setCopied] = useState(false);
 
   async function copy() {
@@ -16,8 +16,8 @@ export function CopyButton({ text }: { text: string }) {
   }
 
   return (
-    <button type="button" onClick={copy} className="copy-button" aria-label="코드 복사">
-      {copied ? '복사됨' : '복사'}
+    <button type="button" onClick={copy} className={className} aria-label={label}>
+      {copied ? '복사됨' : label}
     </button>
   );
 }

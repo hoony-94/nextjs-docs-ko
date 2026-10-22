@@ -100,6 +100,10 @@ export function Sidebar({ versions, onNavigate }: SidebarProps) {
 
   return (
     <div className="sidebar">
+      <Link href="/roadmaps" onClick={onNavigate} className="sidebar__roadmap">
+        <span>학습 로드맵</span>
+        <span aria-hidden="true">→</span>
+      </Link>
       <input
         type="search"
         value={query}

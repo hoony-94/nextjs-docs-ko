@@ -27,6 +27,9 @@ export default async function Home() {
           <Link href="/docs" className="button">
             문서 전체 보기
           </Link>
+          <Link href="/roadmaps" className="button">
+            학습 로드맵
+          </Link>
         </div>
         <dl className="home__stats">
           <div>
