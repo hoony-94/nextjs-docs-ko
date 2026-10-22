@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 최신 문서 비교 캐시 (scripts/docs-check.ts)
+/.cache
+
+# IDE
+.idea/

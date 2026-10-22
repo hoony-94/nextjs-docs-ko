@@ -1,69 +1,145 @@
-import Image from "next/image";
+import Link from 'next/link';
+import { getSiteStats } from '@/lib/content/cached';
 
-export default function Home() {
+const SECTIONS = [
+  { href: '/docs/app/getting-started', title: 'Getting Started', ko: '시작하기', text: '설치부터 레이아웃, 데이터 가져오기, 배포까지 Next.js의 기본 흐름을 순서대로 익힙니다.' },
+  { href: '/docs/app/guides', title: 'Guides', ko: '가이드', text: '인증, 캐싱, 국제화, 테스트처럼 실제 서비스에서 마주치는 주제별 해결 방법을 다룹니다.' },
+  { href: '/docs/app/api-reference', title: 'API Reference', ko: 'API 레퍼런스', text: '컴포넌트, 파일 규칙, 함수, 설정 옵션을 하나씩 찾아보는 사전입니다.' },
+  { href: '/docs/architecture', title: 'Architecture', ko: '아키텍처', text: 'Next.js 컴파일러, Fast Refresh, 지원 브라우저 같은 내부 구조를 설명합니다.' },
+  { href: '/docs/community', title: 'Community', ko: '커뮤니티', text: '문서 기여 방법과 커뮤니티 리소스를 안내합니다.' },
+];
+
+export default async function Home() {
+  const stats = await getSiteStats();
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="home">
+      <section className="home__hero">
+        <p className="home__eyebrow">비공식 학습용 번역 · next@{stats.release}</p>
+        <h1>Next.js 문서를 영어 원문과 한국어로 함께 읽기</h1>
+        <p className="home__lead">
+          공식 문서의 영어 문장 바로 아래에 한국어 번역을 붙였습니다. 원문의 뉘앙스를 놓치지 않으면서 빠르게 이해할 수 있도록, 상단에서 원문+번역 · 번역만 · 원문만 보기를 바꿀 수 있습니다.
+        </p>
+        <div className="home__actions">
+          <Link href="/docs/app/getting-started/installation" className="button button--primary">
+            설치부터 시작하기
+          </Link>
+          <Link href="/docs" className="button">
+            문서 전체 보기
+          </Link>
+        </div>
+        <dl className="home__stats">
+          <div>
+            <dt>원문 문서</dt>
+            <dd>{stats.total}개</dd>
+          </div>
+          <div>
+            <dt>번역된 문서</dt>
+            <dd>{stats.translated}개</dd>
+          </div>
+          <div>
+            <dt>원문 버전</dt>
+            <dd>v{stats.release}</dd>
+          </div>
+        </dl>
+        {stats.versions.length > 1 ? (
+          <p className="home__versions">
+            제공 중인 문서 버전:{' '}
+            {stats.versions.map((version, index) => (
+              <span key={version.id}>
+                {index ? ' · ' : ''}
+                <Link href={version.href}>
+                  {version.label} ({version.tag}){version.latest ? ' 최신' : ''}
+                </Link>
+              </span>
+            ))}
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+        ) : null}
+      </section>
+
+      <section className="home__sections">
+        {SECTIONS.map((section) => (
+          <Link key={section.href} href={section.href} className="home__card">
+            <span className="home__card-title">
+              {section.title} <span className="home__card-ko">{section.ko}</span>
+            </span>
+            <span className="home__card-text">{section.text}</span>
+          </Link>
+        ))}
+      </section>
+
+      <section className="home__upstream">
+        <h2>nextjs.org 최신 문서와 비교</h2>
+        {stats.upstream ? (
+          <>
+            <p className="home__upstream-summary">
+              {stats.upstream.newMajor ? (
+                <strong className="home__upstream-alert">
+                  Next.js {stats.upstream.newMajor}이(가) 출시되었습니다. 이 사이트의 최신 문서는 v{stats.release} 기준입니다.{' '}
+                </strong>
+              ) : stats.upstream.newerRelease ? (
+                <strong className="home__upstream-alert">
+                  새 릴리스 v{stats.upstream.newerRelease}이(가) 나왔습니다. 이 사이트는 v{stats.release} 기준입니다.{' '}
+                </strong>
+              ) : null}
+              v{stats.release} 이후 {stats.upstream.compareLabel}에서 수정된 페이지 <strong>{stats.upstream.changed.length}개</strong>, 새로 생긴 페이지{' '}
+              <strong>{stats.upstream.added.length}개</strong>, 삭제된 페이지 <strong>{stats.upstream.removed.length}개</strong>.{' '}
+              <a href={stats.upstream.compareUrl} target="_blank" rel="noreferrer">
+                전체 변경 비교 ↗
+              </a>
+            </p>
+            <p className="home__upstream-date">
+              {stats.upstream.checkedAt.slice(0, 10)} 확인
+              {stats.upstream.upstreamDate ? ` · 비교 기준 ${stats.upstream.upstreamDate.slice(0, 10)}` : ''}
+            </p>
+            {stats.upstream.changed.length ? (
+              <details className="home__upstream-list">
+                <summary>수정된 페이지 보기</summary>
+                <ul>
+                  {stats.upstream.changed.map((page) => (
+                    <li key={page.key}>
+                      <Link href={page.href}>{page.title}</Link>
+                      {page.translation ? (
+                        <span className="home__upstream-impact">
+                          {' '}
+                          번역 영향: 맞지 않게 될 번역 {page.translation.stale} · 새 문장 {page.translation.added}
+                        </span>
+                      ) : null}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            ) : null}
+            {stats.upstream.added.length ? (
+              <details className="home__upstream-list">
+                <summary>최신 문서에만 있는 페이지</summary>
+                <ul>
+                  {stats.upstream.added.map((page) => (
+                    <li key={page.key}>
+                      <a href={page.url} target="_blank" rel="noreferrer">
+                        {page.key} ↗
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            ) : null}
+          </>
+        ) : (
+          <p className="home__upstream-summary">
+            아직 비교 결과가 없습니다. <code className="inline-code">pnpm docs:check</code>를 실행하면 확인할 수 있습니다.
+          </p>
+        )}
+      </section>
+
+      <section className="home__notes">
+        <h2>이 사이트는 이렇게 만들어졌습니다</h2>
+        <ul>
+          <li>영어 원문은 설치된 next 패키지에 포함된 문서(MIT 라이선스)를 빌드할 때 그대로 읽어 옵니다. 그래서 원문은 항상 표시된 버전과 정확히 같습니다.</li>
+          <li>번역은 문장 단위로 따로 저장해 두고, 원문 문장과 짝이 맞을 때만 그 아래에 붙입니다. 원문이 바뀐 문장은 자동으로 원문만 보입니다.</li>
+          <li>이미지와 영상은 nextjs.org에만 있어서 설명과 원문 링크로 대신합니다.</li>
+        </ul>
+      </section>
+    </main>
   );
 }

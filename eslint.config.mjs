@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // 원문 문서·비교용 git 캐시 (scripts/docs-sync.ts, scripts/docs-check.ts)
+    ".cache/**",
   ]),
 ]);
 
