@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import type { Heading, Nodes, Paragraph, Parent, PhrasingContent, Root, TableCell } from 'mdast';
+import type { MdxJsxFlowElement, MdxJsxTextElement } from 'mdast-util-mdx-jsx';
 import { visit, SKIP } from 'unist-util-visit';
 
 /**
@@ -7,7 +8,12 @@ import { visit, SKIP } from 'unist-util-visit';
  * 렌더링(remark 플러그인)과 추출 스크립트가 같은 함수를 써야 id가 일치한다.
  */
 
-export type UnitKind = 'title' | 'description' | 'heading' | 'sentence' | 'cell';
+export type UnitKind = 'title' | 'description' | 'heading' | 'sentence' | 'cell' | MediaTextAttribute;
+export type MediaTextAttribute = 'alt' | 'caption';
+export type MediaNode = MdxJsxFlowElement | MdxJsxTextElement;
+
+const MEDIA_COMPONENTS = new Set(['Image', 'Video']);
+const MEDIA_TEXT_ATTRIBUTES: MediaTextAttribute[] = ['alt', 'caption'];
 /** text는 id 계산용, display는 번역자에게 보여 줄 텍스트(인라인 코드를 백틱으로 감쌈) */
 export type Unit = { id: string; kind: UnitKind; text: string; display: string };
 export type TranslationMap = Record<string, string>;
@@ -96,11 +102,21 @@ export function walkUnits(
     heading?: (node: Heading, text: string) => void;
     paragraph?: (node: Paragraph, parent: Parent, index: number, sentences: PhrasingContent[][]) => void;
     cell?: (node: TableCell, text: string) => void;
+    /** 이미지·영상의 alt, caption 속성 */
+    media?: (node: MediaNode, attribute: MediaTextAttribute, text: string) => void;
   },
 ) {
   visit(tree, (node, index, parent) => {
     const data = (node as { data?: Record<string, unknown> }).data;
     if (data?.[VISIBLE_FLAG]) return SKIP;
+
+    if ((node.type === 'mdxJsxFlowElement' || node.type === 'mdxJsxTextElement') && MEDIA_COMPONENTS.has(node.name ?? '')) {
+      for (const attribute of MEDIA_TEXT_ATTRIBUTES) {
+        const value = node.attributes.find((attr) => attr.type === 'mdxJsxAttribute' && attr.name === attribute)?.value;
+        if (typeof value === 'string' && /[A-Za-z]{2,}/.test(value)) handlers.media?.(node, attribute, normalize(value));
+      }
+      return SKIP;
+    }
 
     if (node.type === 'heading') {
       if (isTranslatable(node.children)) handlers.heading?.(node, normalize(textOf(node.children)));
@@ -136,6 +152,7 @@ export function collectUnits(tree: Root): Unit[] {
   walkUnits(tree, {
     heading: (node, text) => add('heading', text, displayOf(node.children)),
     cell: (node, text) => add('cell', text, displayOf(node.children)),
+    media: (_node, attribute, text) => add(attribute, text, text),
     paragraph: (_node, _parent, _index, sentences) => {
       for (const group of sentences) {
         if (isTranslatable(group)) add('sentence', textOf(group), displayOf(group));

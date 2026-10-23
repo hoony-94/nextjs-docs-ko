@@ -182,5 +182,6 @@
   "cf9cbf95a118": "Partial Prefetching 도입하기: 새 모델에서 `<Link>`의 동작 방식과 기존 앱을 마이그레이션하는 방법",
   "ed4f5a71a95b": "`prefetch()`와 `navigation()`: 각 내비게이션 단계 API의 전체 동작",
   "d60fcd4d13fd": "페이지를 정적으로 유지하기: `ensureStatic`으로 정적 App Shell, 프리페치 또는 라우트 전체를 요구하는 방법",
-  "bca4a752c21a": "즉각적인 내비게이션 가이드: 라우트의 캐싱 구조 검증"
+  "bca4a752c21a": "즉각적인 내비게이션 가이드: 라우트의 캐싱 구조 검증",
+  "50e645e7891e": "Shell, Prefetch, Navigation 단계. prefetch() 아래의 작업은 링크별 프리페치 시점부터 렌더링되고 navigation() 아래의 작업은 내비게이션 중에만 렌더링되며, 그 전 단계에서는 Suspense 폴백이 보인다는 것을 막대로 나타냅니다."
 }

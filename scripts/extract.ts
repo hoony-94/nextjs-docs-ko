@@ -18,7 +18,7 @@ import { getLatestVersion, getVersion } from '../lib/content/versions';
 const args = process.argv.slice(2);
 const versionFlag = args.indexOf('--version');
 const versionId = versionFlag >= 0 ? args[versionFlag + 1] : getLatestVersion().id;
-const positional = args.filter((arg, index) => !arg.startsWith('--') && index !== versionFlag + 1);
+const positional = args.filter((arg, index) => !arg.startsWith('--') && (versionFlag < 0 || index !== versionFlag + 1));
 const flags = new Set(args.filter((arg) => arg.startsWith('--')));
 const [target = ''] = positional;
 

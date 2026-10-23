@@ -340,5 +340,8 @@
   "fbcdf4f80013": "`src` prop에서 정적 import를 지원합니다. `placeholder` prop이 추가되었습니다. `blurDataURL` prop이 추가되었습니다.",
   "ae1e03855d52": "`loader` prop이 추가되었습니다.",
   "c019ae77d95b": "`layout` prop이 추가되었습니다.",
-  "959961d8b343": "`next/image`가 도입되었습니다."
+  "959961d8b343": "`next/image`가 도입되었습니다.",
+  "fee3485e6f8b": "부모 컨테이너의 너비와 높이를 채우는 반응형 이미지",
+  "184b7d22c2d8": "부모 컨테이너의 너비를 채우는 이미지 그리드",
+  "354efc1e8dda": "페이지 전체 너비와 높이를 채우는 배경 이미지"
 }

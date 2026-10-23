@@ -90,7 +90,6 @@ async function DocArticle({ versionId, docKey }: { versionId: string; docKey: st
     translations: loadTranslations(doc.key),
     knownKeys: new Set(loadDocsIndex(versionId).map((entry) => entry.key)),
     docsBase: docsBase(getVersion(versionId)!),
-    originUrl: context.originUrl,
   });
   const percent = progress.total ? Math.round((progress.done / progress.total) * 100) : 0;
 

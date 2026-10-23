@@ -103,5 +103,6 @@
   "9c072f24b54a": "MDX",
   "a2455af11793": "remark",
   "729d95c4837b": "rehype",
-  "80b0f9f2f848": "Markdoc"
+  "80b0f9f2f848": "Markdoc",
+  "abce397e53fe": "동적 MDX 컴포넌트를 위한 라우트 세그먼트"
 }

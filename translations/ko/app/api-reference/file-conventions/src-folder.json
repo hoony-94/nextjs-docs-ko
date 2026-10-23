@@ -13,5 +13,6 @@
   "ce78c3ca9f81": "`src`를 사용하는 경우 `/components`나 `/lib` 같은 다른 애플리케이션 폴더도 함께 옮기게 될 것입니다.",
   "1741e871625a": "프록시를 사용하는 경우 `src` 폴더 내부에 위치하도록 하세요.",
   "9ee64cd588b8": "Tailwind CSS를 사용하는 경우 `tailwind.config.js` 파일의 content 섹션에 `/src` 접두사를 추가해야 합니다.",
-  "f15a52ed2911": "`@/*`와 같은 import용 TypeScript 경로를 사용하는 경우 `tsconfig.json`의 `paths` 객체에 `src/`가 포함되도록 업데이트해야 합니다."
+  "f15a52ed2911": "`@/*`와 같은 import용 TypeScript 경로를 사용하는 경우 `tsconfig.json`의 `paths` 객체에 `src/`가 포함되도록 업데이트해야 합니다.",
+  "1cce49ce4771": "`src` 폴더를 사용하는 폴더 구조 예시"
 }

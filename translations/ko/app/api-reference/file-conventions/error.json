@@ -52,5 +52,7 @@
   "8496c3246bb6": "`unstable_retry` prop이 추가되었습니다.",
   "da0bd31db3bb": "개발 환경에서도 `global-error`를 표시합니다.",
   "96cb92069ed6": "`global-error`가 도입되었습니다.",
-  "db7306225c27": "`error`가 도입되었습니다."
+  "db7306225c27": "`error`가 도입되었습니다.",
+  "2f2402b759d2": "error.js 특수 파일",
+  "657ce1e7ae73": "error.js의 동작 방식"
 }

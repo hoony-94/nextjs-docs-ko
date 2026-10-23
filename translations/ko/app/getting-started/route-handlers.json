@@ -48,5 +48,6 @@
   "cbf8d31739e9": "라우트 컨텍스트 헬퍼",
   "761624fec5fa": "TypeScript에서는 전역으로 사용할 수 있는 `RouteContext` 헬퍼로 라우트 핸들러의 `context` 매개변수에 타입을 지정할 수 있습니다:",
   "79fc372dc790": "알아두면 좋은 점",
-  "2ec7a8a73d83": "타입은 `next dev`, `next build` 또는 `next typegen` 실행 중에 생성됩니다."
+  "2ec7a8a73d83": "타입은 `next dev`, `next build` 또는 `next typegen` 실행 중에 생성됩니다.",
+  "1ba0e0c31c38": "route.js 특수 파일"
 }

@@ -119,5 +119,7 @@
   "b7efcd82c111": "기본적으로 트레이스 뷰어는 소요 시간을 집계해서 보여 주므로, 개별 시간을 확인하려면 뷰어 오른쪽 상단에서 \"Aggregated in order\"를 \"Spans in order\"로 전환하세요.",
   "1345eccc9519": "**알아두면 좋은 점**: 트레이스 파일은 프로젝트 루트의 `.next-profiles` 디렉터리에 저장됩니다.",
   "50cec8c32571": "여전히 문제가 있나요?",
-  "cccd74678316": "Turbopack 트레이싱 섹션에서 생성한 트레이스 파일을 GitHub Discussions나 Discord에 공유해 주세요."
+  "cccd74678316": "Turbopack 트레이싱 섹션에서 생성한 트레이스 파일을 GitHub Discussions나 Discord에 공유해 주세요.",
+  "75e08b8e67e2": "macOS 시스템 설정의 '개인정보 보호 및 보안' 화면",
+  "ce93770557ef": "macOS 시스템 설정의 '개발자 도구' 옵션 화면"
 }

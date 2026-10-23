@@ -13,8 +13,6 @@ export type RemarkDocsOptions = {
   /** 이 버전 문서의 URL 앞부분 (최신: /docs, 이전 버전: /docs/16) */
   docsBase: string;
   toc: TocEntry[];
-  /** 이미지·영상은 원문 페이지에서 보도록 링크한다. */
-  originUrl: string;
 };
 
 /** 렌더러에 실제로 구현된 컴포넌트. 그 외 대문자 JSX는 UnknownComponent로 바꾼다. */
@@ -161,12 +159,9 @@ export function rewriteHref(url: string, knownKeys: Set<string>, docsBase: strin
   return `https://nextjs.org${url}`;
 }
 
-export function rewriteLinks(tree: Root, knownKeys: Set<string>, docsBase: string, originUrl: string) {
+export function rewriteLinks(tree: Root, knownKeys: Set<string>, docsBase: string) {
   visit(tree, (node) => {
     if (node.type === 'link') node.url = rewriteHref(node.url, knownKeys, docsBase);
-    if (isJsx(node as Nodes) && ['Image', 'Video'].includes((node as JsxNode).name ?? '')) {
-      (node as JsxNode).attributes.push({ type: 'mdxJsxAttribute', name: 'origin', value: originUrl });
-    }
     if (isJsx(node as Nodes) && (node as JsxNode).name === 'FixCard') {
       for (const attr of (node as JsxNode).attributes) {
         if (attr.type === 'mdxJsxAttribute' && attr.name === 'href' && typeof attr.value === 'string') {
@@ -216,6 +211,11 @@ export function applyTranslations(tree: Root, translations: TranslationMap) {
       const ko = translations[unitId(text)];
       if (ko) node.children = [span(['en', 'has-ko'], node.children), span(['ko'], parseKoInline(ko))];
     },
+    // 이미지·영상 컴포넌트에 altKo, captionKo 속성으로 넘긴다.
+    media: (node, attribute, text) => {
+      const ko = translations[unitId(text)];
+      if (ko) node.attributes.push({ type: 'mdxJsxAttribute', name: `${attribute}Ko`, value: ko });
+    },
     paragraph: (node, _parent, _index, sentences) => {
       const translated = sentences.map((group) => (isTranslatable(group) ? translations[unitId(textOf(group))] : undefined));
       if (!translated.some(Boolean)) return;
@@ -232,7 +232,7 @@ export default function remarkDocs(options: RemarkDocsOptions) {
   return (tree: Root) => {
     prepareStructure(tree);
     wrapCodeBlocks(tree);
-    rewriteLinks(tree, options.knownKeys, options.docsBase, options.originUrl);
+    rewriteLinks(tree, options.knownKeys, options.docsBase);
     assignHeadingIds(tree, options.toc, options.translations);
     if (Object.keys(options.translations).length) applyTranslations(tree, options.translations);
   };

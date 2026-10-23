@@ -871,31 +871,39 @@ html[data-view='ko'] .doc-body .bi > .ko {
 }
 
 /* ---------- 커스텀 컴포넌트 ---------- */
-.media-placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  min-height: 140px;
-  margin: 20px 0;
-  padding: 20px;
-  text-align: center;
-  border: 1px dashed var(--border-strong);
-  border-radius: 10px;
-  background: var(--bg-subtle);
-  color: var(--text-faint);
+.doc-media {
+  margin: 24px 0;
 }
-.media-placeholder__text {
-  margin: 0;
-  font-size: 14px;
+.doc-media img,
+.doc-media video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+/* 원문처럼 현재 테마에 맞는 이미지만 보인다. */
+.doc-media .doc-media__dark,
+.dark .doc-media .doc-media__light {
+  display: none;
+}
+.dark .doc-media .doc-media__dark {
+  display: block;
+}
+.doc-media__caption {
+  margin-top: 8px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  text-align: center;
   color: var(--text-muted);
 }
-.media-placeholder__link {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 13px;
+.doc-media__caption > .en,
+.doc-media__caption > .ko {
+  display: block;
+}
+.doc-media__caption > .ko {
+  color: var(--ko-text);
 }
 .fix-grid {
   display: grid;

@@ -37,7 +37,7 @@ export type RenderedDoc = {
 
 export async function renderMdx(
   source: string,
-  options: { translations: TranslationMap; knownKeys: Set<string>; docsBase: string; originUrl: string },
+  options: { translations: TranslationMap; knownKeys: Set<string>; docsBase: string },
 ): Promise<RenderedDoc> {
   const toc: TocEntry[] = [];
   try {

@@ -86,5 +86,6 @@
   "11fc14203dd0": "다음 단계",
   "71fca0e32863": "프리페칭을 최적화하여 개별 하위 트리가 렌더링되는 시점을 제어하세요.",
   "8e14ec2d64a6": "즉각적인 내비게이션을 보장하여 스토어로의 클라이언트 내비게이션이 UI를 즉시 표시하는지 검증하세요.",
-  "dd9a7517f35c": "Cache Components로 마이그레이션하여 기존 앱의 `dynamic = 'force-static'` 같은 라우트 수준 설정을 대체하세요."
+  "dd9a7517f35c": "Cache Components로 마이그레이션하여 기존 앱의 `dynamic = 'force-static'` 같은 라우트 수준 설정을 대체하세요.",
+  "6a0e86ad6263": "Shell, Prefetch, Navigation 단계. ensureStatic 값마다 정적 렌더링 요구가 어느 단계까지 이어지는지 막대로 나타냅니다."
 }

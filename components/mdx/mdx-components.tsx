@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { ComponentProps, ElementType, ReactNode } from 'react';
 import { CodeBlock } from './code-block';
 import { CodeSwitcher } from './code-switcher';
-import { DocImage, DocVideo } from './doc-media';
+import { DocImage, DocVideo, mediaUrl } from './doc-media';
 import { FixCard, FixCardGrid } from './fix-card';
 import { Check, Cross } from './icons';
 
@@ -31,11 +31,9 @@ function Table(props: ComponentProps<'table'>) {
 }
 
 function Img({ src, alt }: ComponentProps<'img'>) {
-  if (typeof src === 'string' && /^https?:/.test(src)) {
-    // eslint-disable-next-line @next/next/no-img-element -- 외부 문서 이미지라 크기를 알 수 없다
-    return <img src={src} alt={alt ?? ''} loading="lazy" />;
-  }
-  return <DocImage alt={alt} />;
+  if (typeof src !== 'string') return null;
+  // eslint-disable-next-line @next/next/no-img-element -- 외부 문서 이미지라 크기를 알 수 없다
+  return <img src={mediaUrl(src)} alt={alt ?? ''} loading="lazy" />;
 }
 
 function UnknownComponent({ children }: { name?: string; children?: ReactNode }) {

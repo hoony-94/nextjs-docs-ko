@@ -64,5 +64,8 @@
   "6c26b5d1b93c": "`ImageResponse`는 `@vercel/og`, `satori`, `resvg`를 사용해 HTML과 CSS를 PNG로 변환합니다.",
   "9b338cdc8820": "flexbox와 일부 CSS 속성만 지원됩니다.",
   "0020d99b9504": "스트리밍 메타데이터는 메타데이터가 `<head>` 태그 안에 있을 것으로 기대하는 봇과 크롤러(예: `Twitterbot`, `Slackbot`, `Bingbot`)에서는 **비활성화됩니다**.",
-  "7c590686a7b1": "고급 레이아웃(예: `display: grid`)은 동작하지 않습니다."
+  "7c590686a7b1": "고급 레이아웃(예: `display: grid`)은 동작하지 않습니다.",
+  "2f58ea035f7a": "app 폴더 안에서 layout, page 파일과 나란히 있는 파비콘 특수 파일",
+  "9c6b92f8c356": "app 폴더 안에서 layout, page 파일과 나란히 있는 OG 이미지 특수 파일",
+  "188f01c4054d": "blog 폴더 안의 OG 이미지 특수 파일"
 }

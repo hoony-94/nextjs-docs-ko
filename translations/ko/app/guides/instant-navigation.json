@@ -207,5 +207,9 @@
   "f10fcb11fc6c": "`instant` API 레퍼런스: 전체 설정",
   "50d6606e2e91": "프리페칭 최적화: 라우트의 일부가 URL 데이터(`searchParams` 또는 `params`)에 의존하며 내비게이션 전에 확정되어야 하는 경우",
   "d822844b5b1d": "캐싱: `use cache`, Suspense, Partial Prerendering에 대한 배경 지식",
-  "aa59fb19e002": "재검증: `cacheLife`와 `updateTag`로 캐시된 데이터를 만료하는 방법"
+  "aa59fb19e002": "재검증: `cacheLife`와 `updateTag`로 캐시된 데이터를 만료하는 방법",
+  "0b2afbf53fa5": "'Page load'로 표시된 'Loading shell'과 대상 URL을 보여 주는 Navigation Inspector 패널",
+  "5f688e2fd396": "'Client nav'로 표시된 'Loading shell'과 출발·대상 URL을 보여 주는 Navigation Inspector 패널",
+  "5f4d90d95ed0": "blocking-route에 대한 개발 오버레이 인사이트. app/products/[slug]/page.tsx의 캐시되지 않은 데이터 접근을 Stream, Cache, Block 수정 카드와 함께 보여 줍니다.",
+  "a1377f248675": "캐시되지 않은 getFeatured() fetch에 대한 개발 오버레이 인사이트와 Stream, Cache, Block 수정 카드"
 }
